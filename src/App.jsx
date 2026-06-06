@@ -244,7 +244,7 @@ export default function LivviaApp() {
           </div>
 
           {/* Input */}
-          <div style={{ padding: "10px 16px 12px", background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 16, margin: "0 16px 12px", display: "flex", alignItems: "center", gap: 10 }}>
+          <div style={{ padding: "12px 16px 12px", background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 16, margin: "0 16px 32px", display: "flex", alignItems: "center", gap: 10 }}>
             <input ref={inputRef} style={{ flex: 1, border: "none", outline: "none", fontSize: 14, color: C.navy, fontFamily: "inherit", background: "transparent" }} placeholder="Posez votre question à Livvia" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === "Enter" && sendMessage()} />
             <button style={{ width: 32, height: 32, borderRadius: "50%", background: C.tealLight, border: `1.5px solid ${C.teal}`, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", color: C.teal, fontSize: 16, flexShrink: 0 }} onClick={() => sendMessage()}>+</button>
           </div>
