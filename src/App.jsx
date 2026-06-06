@@ -75,7 +75,7 @@ function LivviaLogo({ size = 36 }) {
 function TopWave() {
   return (
     <div style={{ height: 80 }}>
-      <div style={{ borderRadius: "60% 60% 60% 60%" }} />
+      <div style={{ borderRadius: "60% 60% 0 0" }} />
     </div>
   );
 }
