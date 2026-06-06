@@ -169,7 +169,7 @@ export default function LivviaApp() {
   if (screen === "login") return (
     <div style={{ minHeight: "100vh", background: C.white, fontFamily: "'Nunito', 'Helvetica Neue', sans-serif", display: "flex", flexDirection: "column", alignItems: "center", maxWidth: 390, margin: "0 auto", position: "relative", overflow: "hidden" }}>
       <TopWave />
-      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "120px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "160px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32 }}>
       <img src="/Logo_Livvia_CMJN_Seul.png" height={60} alt="Livvia" style={{ objectFit: "contain" }} />
     </div>
