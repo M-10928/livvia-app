@@ -74,8 +74,8 @@ function LivviaLogo({ size = 36 }) {
 // ── WAVE SHAPE ────────────────────────────────────────────────────────────────
 function TopWave() {
   return (
-    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 80, overflow: "hidden", zIndex: 0 }}>
-      <div style={{ width: "140%", height: 120, background: C.teal, borderRadius: "0 0 60% 60%", marginLeft: "-20%", opacity: 0.9 }} />
+    <div style={{ height: 80 }}>
+      <div style={{ borderRadius: "0 0 60% 60%" }} />
     </div>
   );
 }
