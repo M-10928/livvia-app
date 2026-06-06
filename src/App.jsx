@@ -60,22 +60,17 @@ function ProAvatar({ name, size = 52 }) {
 }
 
 // ── LIVVIA LOGO SVG ───────────────────────────────────────────────────────────
-function LivviaLogo({ size = 36 }) {
+function LivviaLogo({ height = 40 }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 40 40" fill="none">
-      <path d="M10 28 Q10 14 20 10 Q30 14 30 28" stroke={C.teal} strokeWidth="3.5" strokeLinecap="round" fill="none"/>
-      <circle cx="10" cy="28" r="3" fill={C.teal}/>
-      <circle cx="30" cy="28" r="3" fill={C.teal}/>
-      <circle cx="20" cy="10" r="3" fill={C.teal}/>
-    </svg>
+    <img src="/Logo_Livvia_CMJN_Seul.png" height={height} alt="Livvia" style={{ objectFit: "contain" }} />
   );
 }
 
 // ── WAVE SHAPE ────────────────────────────────────────────────────────────────
 function TopWave() {
   return (
-    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 160, overflow: "hidden", zIndex: 0 }}>
-      <div style={{ width: "100%", height: 320, background: C.teal, borderRadius: "0 0 50% 50%", opacity: 0.95 }} />
+    <div style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 0 }}>
+      <div style={{ width: "100%", height: 130, background: C.teal, borderRadius: "0 0 50% 50%" }} />
     </div>
   );
 }
@@ -169,10 +164,10 @@ export default function LivviaApp() {
   if (screen === "login") return (
     <div style={{ minHeight: "100vh", background: C.white, fontFamily: "'Nunito', 'Helvetica Neue', sans-serif", display: "flex", flexDirection: "column", alignItems: "center", maxWidth: 390, margin: "0 auto", position: "relative", overflow: "hidden" }}>
       <TopWave />
-      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "160px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "140px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32 }}>
-      <img src="/Logo_Livvia_CMJN_Seul.png" height={60} alt="Livvia" style={{ objectFit: "contain" }} />
-    </div>
+          <LivviaLogo height={52} />
+        </div>
         <h2 style={{ fontSize: 20, fontWeight: 800, color: C.navy, margin: "0 0 28px", textAlign: "center" }}>Se connecter</h2>
         <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={fStyle.fieldWrap}>
