@@ -171,9 +171,8 @@ export default function LivviaApp() {
       <TopWave />
       <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "100px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32 }}>
-          <LivviaLogo size={44} />
-          <span style={{ fontSize: 34, fontWeight: 800, color: C.navy, letterSpacing: "-1px" }}>Livvia</span>
-        </div>
+  <img src="/Logo_Livvia_CMJN_Seul.png" height={60} alt="Livvia" style={{ objectFit: "contain" }} />
+</div>
         <h2 style={{ fontSize: 20, fontWeight: 800, color: C.navy, margin: "0 0 28px", textAlign: "center" }}>Se connecter</h2>
         <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={fStyle.fieldWrap}>
