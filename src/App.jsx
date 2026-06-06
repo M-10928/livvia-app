@@ -70,7 +70,7 @@ function LivviaLogo({ height = 40 }) {
 function TopWave() {
   return (
     <div style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 0 }}>
-      <div style={{ width: "100%", height: 130, background: C.teal, borderRadius: "0 0 50% 50%" }} />
+      <div style={{ width: "100%", height: 100, background: C.teal, borderRadius: "0 0 100% 100%" }} />
     </div>
   );
 }
@@ -164,7 +164,7 @@ export default function LivviaApp() {
   if (screen === "login") return (
     <div style={{ minHeight: "100vh", background: C.white, fontFamily: "'Nunito', 'Helvetica Neue', sans-serif", display: "flex", flexDirection: "column", alignItems: "center", maxWidth: 390, margin: "0 auto", position: "relative", overflow: "hidden" }}>
       <TopWave />
-      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "180px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ position: "relative", zIndex: 1, width: "100%", padding: "160px 32px 40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 32 }}>
           <LivviaLogo height={52} />
         </div>
